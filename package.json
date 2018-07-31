@@ -1,0 +1,35 @@
+{
+  "name": "chat_amani",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "bufferutil": "^4.0.0",
+    "bulma": "^0.7.1",
+    "create-react-class": "^15.6.3",
+    "fixed": "^0.3.0",
+    "it": "^1.1.1",
+    "jquery": "^3.3.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-icons": "^2.2.7",
+    "react-scripts": "1.1.4",
+    "reactjs-popup": "^1.1.1",
+    "semver": "^5.5.0",
+    "socket.io": "^2.1.1",
+    "utf-8-validate": "^5.0.1",
+    "uws": "^10.148.1"
+  },
+  "scripts": {
+    "start": "concurrently 'npm run react' 'npm run server'",
+    "react": "react-scripts start",
+    "server": "nodemon src/server/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.18.3"
+  }
+}
