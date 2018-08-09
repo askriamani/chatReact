@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import io from 'socket.io-client'
 import { USER_CONNECTED, LOGOUT } from '../Events'
-//import ChatContainer from './chats/ChatContainer'
+import ChatContainer from './chats/ChatContainer'
 import LoginForm from  './LoginForm'
-import Tabs from './Tabs/Tabs'
 
 const socketUrl = "http://localhost:3231"
 
@@ -46,14 +45,16 @@ render() {
     const { socket, user } = this.state
     return (
         <div className="container">
-        		
             {
                 !user ?	
+              
                 <LoginForm socket={socket} setUser={this.setUser} />
                 :
-                <Tabs  socket={socket} user={user} logout={this.logout}/>
-                //<ChatContainer socket={socket} user={user} logout={this.logout}/>
+                
+                <ChatContainer socket={socket} user={user} logout={this.logout}/>
+                
             }
+            
         </div>
     );
 }

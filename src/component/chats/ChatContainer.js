@@ -4,6 +4,9 @@ import { COMMUNITY_CHAT, MESSAGE_SENT, MESSAGE_RECIEVED, TYPING } from '../../Ev
 import ChatHeading from './ChatHeading'
 import Messages from '../messages/Messages'
 import MessageInput from '../messages/MessageInput'
+import TabList from '../TabList';
+
+
 
 
 
@@ -146,8 +149,9 @@ export default class ChatContainer extends Component {
 
 		return (
 			<div className="container">
-				
-				
+			<TabList/>
+	
+
     <div class="tabs is-large">
 			
 				</div>

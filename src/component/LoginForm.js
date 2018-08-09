@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { VERIFY_USER } from '../Events'
 
+
 export default class LoginForm extends Component {
 	constructor(props) {
 	  super(props);
@@ -42,6 +43,7 @@ export default class LoginForm extends Component {
 		
 		return (
 			<div className="login">
+			
 				<form onSubmit={this.handleSubmit} className="login-form" >
 
 					<label htmlFor="nickname">

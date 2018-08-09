@@ -4,11 +4,6 @@ import 'bulma/css/bulma.css'
 
 
 
-var createReactClass = require('create-react-class');
-
-
-
-var arrayTab = [];
 
 export default class MessageInput extends Component {
 	
@@ -76,19 +71,7 @@ export default class MessageInput extends Component {
 
 	render() {
 	
-		var Hello = createReactClass({
-			render: function() {
-				var namesList = arrayTab.map(function(name){
-								console.log(name);
-								return <li ><a>{name}</a></li>;
-							  })
 		
-				return  <ul>{ namesList }</ul>
-				
-			
-			}
-		});
-	
 			
 	
 		
@@ -99,11 +82,7 @@ export default class MessageInput extends Component {
 		
 			<div className="message-input">
 			
-			<div class="tabs is-large">
-		<Hello />
-	
-		</div>	
-	
+		
 				<form
 					
 					onSubmit={this.handleSubmit}
